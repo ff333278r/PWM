@@ -29,10 +29,10 @@ async function getAQ(lat, lon, key) {
   let aq;
   try {
     const response = await fetch(aqiUrl);
-    console.log('AQI API response status:', response.status); // Log dello status della risposta
+    ///console.log('AQI API response status:', response.status); // Log dello status della risposta
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     const data = await response.json();
-    console.log('AQI API response data:', data); // Log dei dati della risposta
+    ///console.log('AQI API response data:', data); // Log dei dati della risposta
     aq = data.list[0].main.aqi;
   } catch (err) {
     console.error("Errore nella chiamata fetch API per AIR QUALITY INDEX:", err);
@@ -108,10 +108,10 @@ router.get('/meteo', async (req, res) => {
     const weatherUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&units=metric&exclude=minutely,hourly&appid=${process.env.API_KEY}`;
     try {
       const weatherResponse = await fetch(weatherUrl);
-      console.log('Weather API response status:', weatherResponse.status); // Log dello status della risposta
+      ///console.log('Weather API response status:', weatherResponse.status); // Log dello status della risposta
       if (!weatherResponse.ok) throw new Error(`HTTP error! status: ${weatherResponse.status}`);
       const weatherData = await weatherResponse.json();
-      console.log('Weather API response data:', weatherData); // Log dei dati della risposta
+      ///console.log('Weather API response data:', weatherData); // Log dei dati della risposta
 
       const index = ["Good", "Fair", "Moderate", "Poor", "Very poor"];
       const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
