@@ -1,0 +1,23 @@
+{
+    "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "IlTuoMeteo",
+        "description": "Il tuo servizio metereologico online, a portata di click",
+        "about": "Meteo mondiale",
+        "inLanguage" : "English",
+        "url" : "",
+        "author": {
+          "@type" : "Person",
+          "name" : "federico"
+        },
+        "publisher": {
+          "@type" : "CollegeOrUniversity",
+          "name" : "unimi"
+        },
+        "creator": {
+          "@type" : "Person",
+          "name" : "federico"
+        },
+        "copyrightYear" : "2023",
+        "dateModified" : "2023"
+    }

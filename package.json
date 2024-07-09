@@ -1,0 +1,18 @@
+{
+    "name": "iltuometeo",
+    "version": "1.0.0",
+    "description": "IlTuoMeteo, il tuo servizio metereologico online a portata di click",
+    "author": "Federico Ferrari",
+    "scripts": {
+      "start": "node app",
+      "dev": "nodemon app"
+    },
+    "dependencies": {
+      "ddos": "^0.2.1",
+      "dotenv": "^16.0.1",
+      "ejs": "^3.1.8",
+      "express": "^4.18.1",
+      "fs": "^0.0.1-security",
+      "node-fetch": "^2.6.7"
+    }
+  }
